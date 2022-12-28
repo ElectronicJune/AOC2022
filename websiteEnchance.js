@@ -1,0 +1,1 @@
+document.getElementsByClassName("day-desc")[0].style.width = "100%";
