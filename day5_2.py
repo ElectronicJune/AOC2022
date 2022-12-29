@@ -3,7 +3,7 @@ all_lines = f.read().split('\n')
 drawing = all_lines[:(all_lines.index('')-1)]
 instructions = all_lines[(all_lines.index('')+1):]
 
-crate_stacks = ['' for i in range(9)]  
+crate_stacks = ['' for i in range(len(all_lines[all_lines.index('')-1].strip().split('   ')))]  
 
 for i in range(len(drawing)):
     counter = 0
